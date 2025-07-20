@@ -15,7 +15,7 @@ def extract_thinking(text_response):
 def generate_thinking_and_answer(
         messages: list = [],
         model = "Qwen/Qwen3-235B-A22B-fp8-tput",
-        max_tokens = 5000
+        max_tokens = 16000
 ):
 
     response = client.chat.completions.create(
