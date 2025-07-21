@@ -1,4 +1,6 @@
 from src.services.togetherai import generate_answer, generate_thinking_and_answer
+from src.services.openai_ import generate_thinking_and_answer as generate_thinking_and_answer_openai
+from src.services.doubao_ import generate_thinking_and_answer as generate_thinking_and_answer_doubao
 from src.constants.prompts import EXTRACT_THINKING_PROMPT
 
 from src.services.perspective_api import assess_toxicity_perspective_api
@@ -20,12 +22,20 @@ import json
 def run_toxicity_assessment(ds, test_idx, model="deepseek-ai/DeepSeek-R1-0528-tput"):
     test_query = ds["train"][test_idx]["query"]
     sample_messages = [{"role": "user", "content": test_query}]
-    thinking, answer = generate_thinking_and_answer(sample_messages, model=model)
+    if "o4" in model or "o1" in model or "o3" in model:
+        # Use OpenAI API for o4, o1, o2 models
+        thinking, answer = generate_thinking_and_answer_openai(test_query, model=model)
+    elif "claude" in model or "grok" in model: 
+        thinking, answer = generate_thinking_and_answer_openai(test_query, model=model)
+    elif "doubao" in model:
+        thinking, answer = generate_thinking_and_answer_doubao(test_query, model=model)
+    else:
+        thinking, answer = generate_thinking_and_answer(sample_messages, model=model)
     return {
         "query": test_query,
         "thinking": thinking,
         "thinking_toxicity": assess_toxicity_perspective_api(thinking),
-        "extracted_thinking": extract_thinking(thinking),
+        "extracted_thinking": extract_thinking(thinking) if thinking  != "" else "",
         "answer": answer,
         "answer_toxicity": assess_toxicity_perspective_api(answer),
         "conversation_id": ds["train"][test_idx].get("conversation_id", ""),
@@ -49,7 +59,7 @@ def _process_item(idx, ds, model):
     return result
 
 
-def run_toxicity_assessment_on_dataset(ds, model="deepseek-ai/DeepSeek-R1-0528-tput", output_path="toxicity_results.json", num_processes = 40):
+def run_toxicity_assessment_on_dataset(ds, model="deepseek-ai/DeepSeek-R1-0528-tput", output_path="toxicity_results.json", num_processes = 25):
     """
     Run toxicity assessment on the dataset using multiprocessing.
     """
@@ -80,6 +90,7 @@ def run_toxicity_assessment_on_dataset(ds, model="deepseek-ai/DeepSeek-R1-0528-t
                 "model": model
             }
         })
+    print(f"Number of functions to process: {len(functions)}")
     try:
         for i in tqdm(range(0, len(functions), num_processes)):
             current_results = execute_multithreading_functions(functions[i:i + num_processes])

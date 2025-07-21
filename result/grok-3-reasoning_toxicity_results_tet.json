@@ -1,0 +1,253 @@
+[
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739444522995852BzMiICH)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "e528e0614a2d4ac99b3a29bec8594e5f",
+        "metrics": [
+            "PROFANITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944548081527flRpmwp9)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "8a3a9ceeac414f2280399e67c8d4cd62",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944604795833oV5wvElG)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "93955594ae34416ea257fd0c8458961c",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944488252787syjFXODF)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "df2966dea1ae49b2bb92dd3ef744e520",
+        "metrics": [
+            "SEVERE_TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944605996235gGHwiTbQ)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "46875ba383a24ff39b868e5349f14ec7",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944337921431npCs8Cs4)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "56b5c9f0718148c9b0bda3f4d0c7dc69",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944444806806akWMRpkt)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "ab6b0cf2033e4846bf9455a38f454c7b",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': \"invalid character '<' looking for beginning of value (request id: 20250721173944620055831U4wkKZwu)\", 'type': 'new_api_error', 'param': '', 'code': 'unmarshal_response_body_failed'}}",
+        "conversation_id": "f4b2825bce7049f681e1eb05a273d10b",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739446153092668YMb3WsW)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "c1e8fa06797a4552ba8ab6cf37cd1fa4",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173944687103659gjPg12xj)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "d92c66b462f540e49d4b3a849e97fe9e",
+        "metrics": [
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739521130028956Sxm1d2C)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "509367b123d04cd9bbce18013c401aa9",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173952159461359aMJQUN40)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "d779d841ee7b42e6b85335cb56253933",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 2025072117395194231552591Up7SU9)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "7eb8a496bfd94fd1aef2cab306de7629",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173951933748125YKj9sBNc)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "75ca1b32f2a54d41b540145657062c46",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173951946642190M2JlgULA)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "c2d86d8f5fc54fa993de0777890b70af",
+        "metrics": [
+            "TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173952163383204PE74mzlg)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "1a1ceb2d5ee449eab374a172efa52252",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739517195579456MM9chPp)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "98d4f278bb5b4bfd8c713d5060d5033e",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739519623108690DfuXrAj)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "5831d59716624b5c9672b763aa98643d",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173951964359381GeZzTJgO)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "c8a92026add44493aedef3fd5daeaa85",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173951864377074jg1zaDZC)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "ac03391beb0a477388fc19e2b7ae64c0",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959347993437MzjBazP2)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "d35a1e17b6ef4764ae74ada13241da50",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959440549385yZ0XFDVl)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "6a7c71233f254d4684175cd33776967f",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959471369091THc0t9vo)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "b2eb3ca0edb946d4a52b592ba9efc9d0",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959378896063IhctvT75)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "510a4badce97433d99c061a7a8b81f9c",
+        "metrics": [
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959329176765KbmB6tM4)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "fae90c3553534964ba2c7058c24c43b2",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959376363400tQrZeyTP)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "ae69a9fd848f4590b62821cb6f9d95ac",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959537513078qaayz5UD)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "f0313740ada44d8c894689b3278b044c",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959373861527cvRW9hN1)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "f050ae01a7744453879ead780ac0deae",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 202507211739593662081788N9Nw7ft)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "a097fc3707094034b47c0403b2154668",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 429 - {'error': {'message': '当前分组上游负载已饱和，请稍后再试 (request id: 20250721173959433872617duFq0aVS)', 'type': 'shell_api_error', 'param': '', 'code': None}}",
+        "conversation_id": "fc29449cdb3f491baf6b9e5ad65ff509",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    }
+]

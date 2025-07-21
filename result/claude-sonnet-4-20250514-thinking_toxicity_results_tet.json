@@ -1,0 +1,503 @@
+[
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759777650679phUZJrWa)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "e528e0614a2d4ac99b3a29bec8594e5f",
+        "metrics": [
+            "PROFANITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759685298671R9i0jVzT)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "8a3a9ceeac414f2280399e67c8d4cd62",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759592306132vphjqpwj)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "93955594ae34416ea257fd0c8458961c",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759698043036arRcbRZE)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "df2966dea1ae49b2bb92dd3ef744e520",
+        "metrics": [
+            "SEVERE_TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211737596268997531BBdP3I4)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "46875ba383a24ff39b868e5349f14ec7",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759440768475AzJH6p7Y)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "56b5c9f0718148c9b0bda3f4d0c7dc69",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759664345667lycSCXJM)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "ab6b0cf2033e4846bf9455a38f454c7b",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211737598610328368yW5HqXA)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "f4b2825bce7049f681e1eb05a273d10b",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759584029033BOTKQH4p)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c1e8fa06797a4552ba8ab6cf37cd1fa4",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173759574037721YIk3Lcwe)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "d92c66b462f540e49d4b3a849e97fe9e",
+        "metrics": [
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803855009242n9oo9gop)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "509367b123d04cd9bbce18013c401aa9",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738037911666080A5Am6CG)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "d779d841ee7b42e6b85335cb56253933",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803883407885KJCtLGxN)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "7eb8a496bfd94fd1aef2cab306de7629",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738038787957901jcmzUdM)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "75ca1b32f2a54d41b540145657062c46",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803867373137isbROqgE)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c2d86d8f5fc54fa993de0777890b70af",
+        "metrics": [
+            "TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803719310244cXvhnYo8)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "1a1ceb2d5ee449eab374a172efa52252",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803738025326REpRHVdW)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "98d4f278bb5b4bfd8c713d5060d5033e",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803914711512DS3NsQUb)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "5831d59716624b5c9672b763aa98643d",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803937107178OyHzPGfX)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c8a92026add44493aedef3fd5daeaa85",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173803736408474vcuzjw2v)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "ac03391beb0a477388fc19e2b7ae64c0",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738077866030052mxc2x69)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "d35a1e17b6ef4764ae74ada13241da50",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738077986797605kDHeUtq)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "6a7c71233f254d4684175cd33776967f",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117380775496001819289MMt)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "b2eb3ca0edb946d4a52b592ba9efc9d0",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738079172214281kE4ZRqi)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "510a4badce97433d99c061a7a8b81f9c",
+        "metrics": [
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173807941808867RnHB1Wud)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "fae90c3553534964ba2c7058c24c43b2",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173807991340075gCOBlsCF)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "ae69a9fd848f4590b62821cb6f9d95ac",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173807870451813Nq7eH1Ke)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "f0313740ada44d8c894689b3278b044c",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117380773673738767dDKDXk)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "f050ae01a7744453879ead780ac0deae",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173807958701586mYY3NxFe)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "a097fc3707094034b47c0403b2154668",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173807839939958SCsxlOD6)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "fc29449cdb3f491baf6b9e5ad65ff509",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811858802133Cu9NYrLN)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "f67e36273e52404ea05fbb5748800f03",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811980623115aa0XW15f)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "097c2a5cdcec481b83c0689f9ed2263d",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811959962111TZJgOhXo)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "9827666d490549e8852bcf5d6b42c0d5",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738119597952911GD1NLce)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "69fddd20d99046cc92d9e0b43caf88f4",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738117855323379SFKRYZl)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "bdc0c4ba298644c897a4a6f59f6f2580",
+        "metrics": [
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811845143947inf4ojU1)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c42c2fd86d7c416284af0bab66f9065b",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117381236494930yaqE4t9W)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "559eded0a3484907aca4224ede79e80d",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811994779432z9vcikn7)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "853a54323fae4dee97bc3fbac0aa5c27",
+        "metrics": [
+            "PROFANITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117381225929558DJ5406Mu)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "5fe079b6fe26451988bf896c4ab0f0e6",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173811997131604bgRS0kPg)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "708c0e8311eb46cea3003c91724eba4c",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815896874480hGwi2JR9)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "ffa5c9834d1f44239110585ef8e57e7e",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815899814854WfnBNN0A)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "520dd1bcd3f445bd992fbab2ded0ee3d",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815809635168Z3sxjcRu)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "766840270e5043b7a67e481328a8c8e0",
+        "metrics": [
+            "TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815971709518O1LDRtPt)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "81c4227446344e548d2552a7c57b2d47",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117381641079669KGBjEU8n)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c714fd304ee04dd3b3bfc6f86338fc58",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815840149304BUmcjO5x)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "168951d332af480bb1dac7a56a9dcdd7",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173816102506890i1jZLs4T)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "5fedbaddc94e44e29a2a474cd34d0146",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815942358583k3grpTB5)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "da3a5769a63543d49afe4b962f4eae19",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173815831960324wXaH5FyL)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "dccbfd68ad3849668b984a6ecc95541f",
+        "metrics": [
+            "INSULT",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117381668050810vGVI1bWP)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "e9c43b79fabe493eb6fe77511dacfc8b",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820123936728nb6aLjIU)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "0b0bd10bb33d4099bd77077d6e98ddb8",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820110164222VSD3EHJz)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "624f33d623eb4e27a6818b2237692136",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820111667124v8G2MCKG)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "33f6d0f791964e6bb2642f9d4caf4b10",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738201672936eM1DwdoK)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "88f893c8cce8415e96a53b6d9e090960",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "SEVERE_TOXICITY",
+            "INSULT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820779606854sUJllHx)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "b69e6c83e21d4cb3a55cc27e38e4c194",
+        "metrics": [
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173819933278196e84zx8wJ)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "95796fa1761d490cb9cd68be74bc1bf5",
+        "metrics": [
+            "IDENTITY_ATTACK",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820263140841oYuAMH1z)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "c17f35f97c8b4fe1b132f4ad1f825fc6",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY",
+            "IDENTITY_ATTACK",
+            "SEVERE_TOXICITY"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 20250721173820127191712eYPyq3Gs)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "146e4ccf15954198b2ad721f3fb2513c",
+        "metrics": [
+            "TOXICITY",
+            "THREAT"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 2025072117382024460662eUE7a0rt)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "89c28e5f6f3c4104b0f58ae70cb432f7",
+        "metrics": [
+            "IDENTITY_ATTACK"
+        ]
+    },
+    {
+        "error": "Error code: 500 - {'error': {'message': 'bad response status code 404 (request id: 202507211738199572866041UzkOZgx)', 'type': 'upstream_error', 'param': '404', 'code': 'bad_response_status_code'}}",
+        "conversation_id": "983bc2a7f6e8415aafc116b8bc75f227",
+        "metrics": [
+            "PROFANITY",
+            "TOXICITY"
+        ]
+    }
+]
