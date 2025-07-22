@@ -26,10 +26,13 @@ def run_toxicity_assessment(ds, test_idx, model="deepseek-ai/DeepSeek-R1-0528-tp
         # Use OpenAI API for o4, o1, o2 models
         thinking, answer = generate_thinking_and_answer_openai(test_query, model=model)
     elif "claude" in model or "grok" in model: 
+        # This is because i use an API aggregator
         thinking, answer = generate_thinking_and_answer_openai(test_query, model=model)
     elif "doubao" in model:
+        # Use Doubao API for Doubao models
         thinking, answer = generate_thinking_and_answer_doubao(test_query, model=model)
     else:
+        # Use Together AI API for other models, mostly open source models
         thinking, answer = generate_thinking_and_answer(sample_messages, model=model)
     return {
         "query": test_query,
@@ -249,32 +252,36 @@ def analyze_success_cases(results: list = []):
     return None
 
 
-def analyze_result(result_path = ""):
+def analyze_result(result_path = "", extract_missing_thinking = False, extract_missing_toxicity = False):
     if os.path.exists(result_path):
         with open(result_path, "r") as f:
             results = json.load(f)
         
         # Check and re-extract thinking if necessary
-        # for i in results:
-        #     if "error" in i or "extracted_thinking" not in i or i["thinking"] == "":
-        #         continue
-        #     if format_extracted_thinking(i["extracted_thinking"]) is None:
-        #         count_ = 0
-        #         while count_ < 3:
-        #             i["extracted_thinking"] = extract_thinking(i["thinking"], model = "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8")
-        #             if format_extracted_thinking(i["extracted_thinking"]) is not None:
-        #                 break
-        #             count_ += 1
-        #             print(f"Error extracting thinking from {i['thinking']}. Please check the extracted thinking.")
-        # for i in results:
-        #     if "error" in i :
-        #         continue
-        #     if i["thinking_toxicity"] is None:
-        #         i["thinking_toxicity"] = assess_toxicity_perspective_api(i["thinking"])
-        #     if i["answer_toxicity"] is None:
-        #         i["answer_toxicity"] = assess_toxicity_perspective_api(i["answer"])
-        # with open(result_path, "w") as f:
-        #     json.dump(results, f, indent=4, ensure_ascii=False)
+        if extract_missing_thinking:
+            for i in results:
+                if "error" in i or "extracted_thinking" not in i or i["thinking"] == "":
+                    continue
+                if format_extracted_thinking(i["extracted_thinking"]) is None:
+                    count_ = 0
+                    while count_ < 3:
+                        i["extracted_thinking"] = extract_thinking(i["thinking"], model = "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8")
+                        if format_extracted_thinking(i["extracted_thinking"]) is not None:
+                            break
+                        count_ += 1
+                        print(f"Error extracting thinking from {i['thinking']}. Please check the extracted thinking.")
+            with open(result_path, "w") as f:
+                json.dump(results, f, indent=4, ensure_ascii=False)
+        if extract_missing_toxicity:
+            for i in results:
+                if "error" in i :
+                    continue
+                if i["thinking_toxicity"] is None:
+                    i["thinking_toxicity"] = assess_toxicity_perspective_api(i["thinking"])
+                if i["answer_toxicity"] is None:
+                    i["answer_toxicity"] = assess_toxicity_perspective_api(i["answer"])
+            with open(result_path, "w") as f:
+                json.dump(results, f, indent=4, ensure_ascii=False)
         print(f"Analyzing results from {result_path}")
         df = get_overall_results(results)
         print(df.to_string(index=False))
