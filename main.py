@@ -4,7 +4,7 @@ load_dotenv()
 from src.dataset.tet import ds as tet_ds
 from src.utils import run_toxicity_assessment_on_dataset, analyze_result
 
-from src.services.openai_ import generate_thinking_and_answer, client
+from src.services.self_host import generate_thinking_and_answer
 
 if __name__ == "__main__":
     # run_toxicity_assessment_on_dataset(tet_ds, model = "Qwen/Qwen3-235B-A22B-fp8-tput", output_path="toxicity_results_tet.json")
@@ -24,3 +24,9 @@ if __name__ == "__main__":
     # analyze_result("/Users/tinhluong/work_dir/do_thinking_llms_defend_against_toxicity/result/deepseek-ai_DeepSeek-R1-Distill-Qwen-14B_toxicity_results_tet.json")
     # analyze_result("/Users/tinhluong/work_dir/do_thinking_llms_defend_against_toxicity/result/o4-mini-2025-04-16_toxicity_results_tet.json")
     # analyze_result("/Users/tinhluong/work_dir/do_thinking_llms_defend_against_toxicity/result/doubao-1-5-thinking-pro-250415_toxicity_results_tet.json")
+
+
+    print(generate_thinking_and_answer(
+        input="Tell me a three sentence bedtime story about a unicorn.",
+        model="microsoft/Phi-4-reasoning",
+    ))
