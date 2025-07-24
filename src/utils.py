@@ -10,6 +10,9 @@ from src.dataset.local import ds as local_ds
 from multiprocessing import Pool, cpu_count
 from functools import partial
 
+import random
+from datasets import load_dataset
+
 import os
 import concurrent.futures
 import pandas as pd
@@ -18,6 +21,9 @@ import numpy as np
 from tqdm import tqdm
 
 import json
+
+random.seed(10)
+
 
 def run_toxicity_assessment(ds, test_idx, model="deepseek-ai/DeepSeek-R1-0528-tput"):
     test_query = ds["train"][test_idx]["query"]
@@ -129,7 +135,7 @@ def extract_thinking(thinking, model = "google/gemma-3n-E4B-it"):
             "content": EXTRACT_THINKING_PROMPT.format(original_thinking=thinking)
         }
     ]
-    response = generate_answer(messages, model="google/gemma-3n-E4B-it", max_tokens=5000)
+    response = generate_answer(messages, model=model, max_tokens=5000)
     return response
 
 
@@ -292,3 +298,107 @@ def analyze_result(result_path = "", extract_missing_thinking = False, extract_m
     else:
         return None
     return df
+
+
+
+def _process_synthesis_item(item, model):
+    """Worker function to process a single item from the dataset."""
+    try:
+        messages = [{"role": "user", "content": item["query"]}]
+        thinking, answer = generate_thinking_and_answer(messages=messages, model=model)
+        return {
+            "conversation_id": item["conversation_id"],
+            "query": item["query"],
+            "thinking": thinking,
+            "answer": answer,
+            "model": model
+        }
+    except Exception as e:
+        return {
+            "error": str(e),
+            "conversation_id": item["conversation_id"],
+        }
+
+def synthesize_toxic_chat_data(output_path: str = "./data/synthesis_toxic_chat.json", num_processes: int = 10):
+    """
+    Loads the toxic-chat dataset, filters for potentially toxic or interesting samples,
+    generates new responses using specified models, and saves the results.
+    """
+
+    # Load dataset
+    print("Loading dataset...")
+    ds = load_dataset("lmsys/toxic-chat", "toxicchat0124")
+    
+    # Filter failed samples
+    print("Filtering samples...")
+    failed_samples = []
+    train_data = ds["train"]
+    for i in range(len(train_data)):
+        flag = False
+        # Flag if OpenAI moderation score is high
+        for item in eval(train_data[i]["openai_moderation"]):
+            if item[1] > 0.05:
+                flag = True
+                break
+        # Flag if human-annotated toxicity is present
+        if train_data[i]["toxicity"] == 1:
+            flag = True
+        
+        if flag:
+            failed_samples.append({
+                "conversation_id": train_data[i]["conv_id"],
+                "query": train_data[i]["user_input"]
+            })
+        # Also include a random subset of non-flagged samples
+        elif random.random() > 0.8:
+            failed_samples.append({
+                "conversation_id": train_data[i]["conv_id"],
+                "query": train_data[i]["user_input"]
+            })
+
+    print(f"Found {len(failed_samples)} samples to process.")
+
+    # Prepare functions for multithreading
+    models = ["deepseek-ai/DeepSeek-R1-0528-tput", "Qwen/Qwen3-235B-A22B-fp8-tput"]
+
+    if os.path.exists(output_path):
+        print(f"Output file {output_path} already exists. Loading existing results.")
+        with open(output_path, "r", encoding='utf-8') as f:
+            existing_results = json.load(f)
+    else:
+        print(f"Output file {output_path} does not exist. Starting fresh.")
+        existing_results = []
+    # Filter out already processed items
+    processed_conversation_ids = np.unique([item["conversation_id"] for item in existing_results if "conversation_id" in item and "error" not in item])
+    processed_failed_samples = [sample for sample in failed_samples if sample["conversation_id"] not in processed_conversation_ids]
+    print(f"Number of samples to process after filtering: {len(processed_failed_samples)}")
+    # Prepare functions for multithreading
+    print("Preparing functions for multithreading...")
+    # Create a list of functions to process each sample
+    functions = [
+        {
+            "fn": _process_synthesis_item,
+            "args": {
+                "item": sample,
+                "model": random.choice(models),
+            }
+        } for sample in processed_failed_samples
+    ]
+
+    # Process in batches
+    results = existing_results
+    print(f"Processing functions in batches of {num_processes}...")
+    try:
+        for i in tqdm(range(0, len(functions), num_processes), desc="Processing Batches"):
+            batch_functions = functions[i:i + num_processes]
+            current_results = execute_multithreading_functions(batch_functions)
+            results.extend(current_results)
+            
+            # Save intermediate results
+            with open(output_path, "w", encoding='utf-8') as f:
+                json.dump(results, f, indent=4, ensure_ascii=False)
+
+        print(f"Processing complete. Results saved to {output_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        print(f"Partial results saved to {output_path}")

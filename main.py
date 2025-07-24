@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from src.dataset.tet import ds as tet_ds
-from src.utils import run_toxicity_assessment_on_dataset, analyze_result
+from src.utils import run_toxicity_assessment_on_dataset, analyze_result, synthesize_toxic_chat_data
 
 from src.services.self_host import generate_thinking_and_answer
 
@@ -26,7 +26,11 @@ if __name__ == "__main__":
     # analyze_result("/Users/tinhluong/work_dir/do_thinking_llms_defend_against_toxicity/result/doubao-1-5-thinking-pro-250415_toxicity_results_tet.json")
 
 
-    print(generate_thinking_and_answer(
-        input="Tell me a three sentence bedtime story about a unicorn.",
-        model="microsoft/Phi-4-reasoning",
-    ))
+    # print(generate_thinking_and_answer(
+    #     input="Tell me a three sentence bedtime story about a unicorn.",
+    #     model="microsoft/Phi-4-reasoning",
+    # ))
+    synthesize_toxic_chat_data(
+        output_path="./data/synthesis_toxic_chat.json",
+        num_processes=10
+    )
